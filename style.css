@@ -1,0 +1,235 @@
+body {
+    background-color: rgb(133, 136, 148);
+    width: 100%;
+}
+
+header {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+header h1 {
+    color: rgba(10, 56, 113, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cont-global {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.input-area {
+    width: 40%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#inputEnt {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+}
+
+#inputEntrada::placeholder {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.Ambosbotones p {
+    display: flex;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+
+#Restriccion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.soloBotones {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 5px;
+
+}
+
+.boton1 {
+    width: 200px;
+    height: 50px;
+    border-radius: 2rem;
+    border: none;
+    background: rgba(10, 56, 113, 1);
+    color: white;
+    font-size: 1.1rem;
+    cursor:grabbing;
+    transition: 1s all;
+}
+
+
+.boton2 {
+    width: 200px;
+    height: 50px;
+    border-radius: 2rem;
+    color: rgba(10, 56, 113, 1);
+    background: white;
+    border-color: rgba(10, 56, 113, 1);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.boton1:hover{
+    background: rgb(0, 255, 34);
+} 
+
+.boton2:hover {
+    background: rgb(247, 24, 24);
+}
+
+.output-area {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 1rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.img-muñeco {
+    position: absolute;
+    display: flex;
+    width: 250px;
+    margin-top: 3rem;
+}
+
+.output-area h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.output-area p {
+    margin-top: 1rem;
+    font-size: 14px;
+    text-align: center;
+    font-family: monospace;
+}
+
+#inputSalida {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.boton3 {
+    width: 180px;
+    height: 50px;
+    background: rgba(10, 56, 113, 1);
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;   
+    transition: 1s all; 
+    margin-top: 1rem;
+    visibility: hidden;
+}
+
+.boton3:hover {
+    background: orange;
+}
+
+footer {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-leyenda {
+    text-align: center;
+}
+
+/* Diseño Responsive */
+
+@media screen and (max-width:768px){
+    body {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 7vw;
+        margin: 0.7rem;
+    }
+
+    .cont-global {
+        flex-wrap: wrap;
+    }
+
+    #inputEnt {
+        height: 250px;
+    }
+
+    .input-area {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    #inputSalida {
+        height: 250px;
+    }
+
+    .output-area {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .img-muñeco {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   
+    #inputSalida {
+        height: auto;
+    }
+
+    .soloBotones {
+        flex-wrap: wrap;
+    }
+
+    .boton1, .boton2 {
+        width: 300px;
+    }
+
+    .boton2 {
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-bottom: 10px;
+    }
+}
